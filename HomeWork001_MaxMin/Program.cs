@@ -43,3 +43,5 @@ else
 {
     Console.WriteLine("min = max = "+num1);
 }
+
+// WTF??
