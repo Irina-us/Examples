@@ -6,7 +6,20 @@
 // -3 -> 9
 // -7 -> 49
 
-Console.WriteLine("Введите целое число");
+System.Console.WriteLine("Введите целое число");
 int num = Convert.ToInt32( Console.ReadLine() );
 int result = num*num;
 System.Console.WriteLine("Квадрат введенного числа равен "+result);
+
+if (num>0)
+{
+    System.Console.WriteLine("Вы ввели положительное число");
+}
+else if (num==0)
+{
+    System.Console.WriteLine("Вы ввели ноль");
+}
+else 
+{
+    System.Console.WriteLine("Вы ввели отрицательное число");
+}
