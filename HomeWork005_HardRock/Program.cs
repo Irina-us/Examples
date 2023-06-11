@@ -23,3 +23,4 @@ int digit = x % 10;
 else
     System.Console.WriteLine("Третьей цифры нет");
 
+//Hard!
