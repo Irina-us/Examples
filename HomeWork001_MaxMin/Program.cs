@@ -6,30 +6,40 @@
 //a = 2 b = 10 -> max = 10
 //a = -9 b = -3 -> max = -3
 
-int a = 5;
-int b = 15;
+System.Console.WriteLine("Введите целое число1");
+int num1 = Convert.ToInt32( Console.ReadLine() );
 
-int max = a;
+System.Console.WriteLine("Введите целое число2");
+int num2 = Convert.ToInt32( Console.ReadLine() );
 
-if (a > max) max = a;
-if (b > max) max = b;
-    Console.Write("a = 5, b = 7 -> max = ");
-    Console.WriteLine(max);
+// int max = num1;
 
+// if (num1 > max) max = num1;
+// if (num2 > max) max = num2;
 
-// else
-// {
-//     Console.Write("");
-// }
+//     Console.Write("max = ");
+//     Console.WriteLine(max);
 
-// if(username.ToLower() == "irina")
-// {
-//     Console.WriteLine("YEEE, It's Irina!!!");
-// }
+// int min = num2;
 
-// else
-// {
-//     Console.Write("Hello, ");
-//     Console.Write(username);
-//     Console.Write("!");
-// }
+// if (num1 < min) min = num1;
+// if (num2 < min) min = num2;
+
+//     Console.Write("min = ");
+//     Console.WriteLine(min);
+
+if (num1 > num2) 
+{
+    Console.WriteLine("max = "+num1);
+    Console.WriteLine("min = "+num2);
+}
+else 
+    if(num1 < num2)
+{
+    Console.WriteLine("min = "+num1);
+    Console.WriteLine("max = "+num2);
+}
+else 
+{
+    Console.WriteLine("min = max = "+num1);
+}
